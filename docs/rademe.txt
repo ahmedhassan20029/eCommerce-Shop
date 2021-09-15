@@ -1,0 +1,98 @@
+1- simple analysis
+languages use on websit
+- html5
+- css3
+- sass
+- bootstrap
+- jqoury
+- js
+- php
+- mysql
+- pdo
+pages & features
+- settings
+- dashboard
+- statistics
+- log
+- users
+- comments
+=========================
+- project structure
+
+|-ecommerce_shop
+============structure dashboard================
+|--dashboard
+|    --layout_admin
+|       |-- css
+|           |-- db_style.css
+|           |-- db_style.css.map
+|           |-- db_style.scss
+|       |-- fonts
+|       |-- images
+|           |-- img-admin.jpg
+|       |-- js
+|           |-- db_custam.js
+|    --includes_admin
+|       |-- functions
+|           |-- function.php
+|       |-- languages
+|           |-- english.php
+|           |-- arabic.php
+|       |-- libraries
+|           |-- lib_css
+|               |-- bootstrap.css
+|               |-- bootstrap.css
+|               |-- bootstrap.min.css
+|               |-- bootstrap.min.css.map
+|           |-- lib_js
+|               |-- flaticon
+|                   |-- flaticon.css
+|               |-- bootstrap.bundle.js.map
+|               |-- jquery.js
+|       |-- templates
+|           |-- header.php
+|           |-- footer.php
+|           |-- navbar.php
+|       |index.php
+|       |init.php
+|       |connection_db.php
+|       |dashboard.php
+|       |logout.php
+|       |members.php
+|       |edite-profile.php
+|       |page.php
+|       |404.php
+=================structure website===================
+| --data
+|    |-- uploads
+| --docs
+|    |-- rademy.txt
+| --layout
+|    |-- css
+|    |-- fonts
+|    |-- images
+|    |-- js
+| --includes
+|    |-- functions
+|    |-- languages
+|    |-- libraries
+|    |-- templates
+
+===============================
+use varibles in project
+
+// the var use to (no include file)
+    $noInclude = '';
+    
+// the var use to (print in page title)
+$titlePage = 'hire your name page';
+
+
+====================================
+use function in project
+
+// this function use in project print languages page
+- lang();
+
+// this function use in project print title page
+- gettitle();

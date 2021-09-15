@@ -1,0 +1,97 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?5d474ba66467b57cd8ca8eba50023cf1") format("truetype"),
+url("./flaticon.woff?5d474ba66467b57cd8ca8eba50023cf1") format("woff"),
+url("./flaticon.woff2?5d474ba66467b57cd8ca8eba50023cf1") format("woff2"),
+url("./flaticon.eot?5d474ba66467b57cd8ca8eba50023cf1#iefix") format("embedded-opentype"),
+url("./flaticon.svg?5d474ba66467b57cd8ca8eba50023cf1#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "cloud-computing": "\f101",
+    "paint": "\f102",
+    "secure-shield": "\f103",
+    "responsive-design-symbol": "\f104",
+    "apple": "\f105",
+    "google-play": "\f106",
+    "customer-support": "\f107",
+    "play-button": "\f108",
+    "left-arrow": "\f109",
+    "right-arrow": "\f10a",
+    "arrow-point-to-right": "\f10b",
+    "facebook": "\f10c",
+    "instagram": "\f10d",
+    "youtube": "\f10e",
+    "twitter": "\f10f",
+    "play": "\f110",
+    "calendar": "\f111",
+    "down-filled-triangular-arrow": "\f112",
+);
+
+.flaticon-cloud-computing:before {
+    content: map-get($flaticon-map, "cloud-computing");
+}
+.flaticon-paint:before {
+    content: map-get($flaticon-map, "paint");
+}
+.flaticon-secure-shield:before {
+    content: map-get($flaticon-map, "secure-shield");
+}
+.flaticon-responsive-design-symbol:before {
+    content: map-get($flaticon-map, "responsive-design-symbol");
+}
+.flaticon-apple:before {
+    content: map-get($flaticon-map, "apple");
+}
+.flaticon-google-play:before {
+    content: map-get($flaticon-map, "google-play");
+}
+.flaticon-customer-support:before {
+    content: map-get($flaticon-map, "customer-support");
+}
+.flaticon-play-button:before {
+    content: map-get($flaticon-map, "play-button");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-arrow-point-to-right:before {
+    content: map-get($flaticon-map, "arrow-point-to-right");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon-map, "youtube");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-play:before {
+    content: map-get($flaticon-map, "play");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon-map, "calendar");
+}
+.flaticon-down-filled-triangular-arrow:before {
+    content: map-get($flaticon-map, "down-filled-triangular-arrow");
+}

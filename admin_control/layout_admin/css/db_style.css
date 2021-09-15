@@ -1,0 +1,100 @@
+* {
+  text-transform: capitalize;
+}
+
+.toggle {
+  display: inline !important;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+nav a:hover {
+  color: red !important;
+}
+
+.admin-login {
+  width: 300px;
+  margin: 100px auto;
+}
+
+nav {
+  width: 15%;
+  background-color: #9d9d9d;
+  display: inline-grid;
+  margin-right: 2%;
+}
+nav .profile-admin {
+  text-align: center;
+  margin-top: 15%;
+}
+nav .profile-admin .img-admin {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+nav .profile-admin .img-admin img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+nav .profile-admin .name-admin {
+  margin: 0;
+}
+nav .profile-admin .name-admin span:nth-child(2) {
+  text-transform: lowercase !important;
+  cursor: pointer;
+  display: block;
+}
+nav .profile-admin .name-admin span:nth-child(2):hover {
+  color: red;
+}
+nav .profile-admin .name-admin span:nth-child(2) i {
+  font-size: 10px;
+  margin-left: 2px;
+}
+nav .profile-admin ul {
+  display: none;
+  padding: 0;
+}
+
+.welcome-admin {
+  display: inline-grid;
+}
+
+.section_manger {
+  display: inline-grid;
+  width: 80%;
+}
+
+.info-edite {
+  display: inline-grid;
+  width: 70%;
+}
+.info-edite form label::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.add_members {
+  display: inline-grid;
+  width: 70%;
+}
+.add_members form label::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=db_style.css.map */
