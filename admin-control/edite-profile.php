@@ -102,7 +102,7 @@
                 echo '<div class="alert alert-danger">' . $errors . '</div>';
             }    
         } else {
-             // connection database.
+            // connection database.
             $stmt = $con->prepare('UPDATE users SET UserName = ?, Password = ?, Email = ?, FullName = ?, phone = ? WHERE UserID = ?');
             $stmt->execute(array($_POST['username'], $pass, $_POST['email'], $_POST['full-name'], $_POST['tel'], $_SESSION['ID']));
         }

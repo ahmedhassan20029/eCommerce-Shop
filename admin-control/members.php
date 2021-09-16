@@ -18,7 +18,7 @@
             <div class='section_manger'>
                 <a href='edite-profile.php?action=edite&userid=<?php echo $_SESSION['ID'] ?>'><?php echo lang('edite_profile')?></a>
                 <br>
-                <a href='add-members.php'><?php echo lang('add-new-member')?></a>
+                <a href='add-members.php?action=add'><?php echo lang('add-new-member')?></a>
             </div>
             <!--end code html-->
 
