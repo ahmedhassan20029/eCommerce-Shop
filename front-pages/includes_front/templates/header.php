@@ -39,12 +39,14 @@
     </div>
     <!--End div note-site-->
     <!--Start section curinsy and logo and baskitshop-->
-    <div>
+    <div class="header-top">
       <div class='container'>
-        <div class='row'>
-          <section class='col-md-4'>
-              <div class='row'>
-                  <section class='col-md-4'>
+        
+      <div class='row '>
+
+          <section class='col-md-5 mt-2'>
+              <div class='row cur-lang'>
+                  <section class='col-md-3'>
                     <i class="fa-solid fa-dollar-sign"></i>
                     <span>USD</span>
                     <i class="fa-solid fa-angle-down"></i>
@@ -56,19 +58,29 @@
                   </section>
               </div>
           </section>
+
           <section class='col-md-4'>
               <img src="admin-control/layout_admin/images/multistore-logo.jpg" alt="logo-tech-shop">
           </section>
-          <section class='col-md-4'>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-basket-shopping"></i>
+
+          <section class='col-md-3 mt-2 option-main'>
+            <button class="d-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="d-inline user">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="d-inline desktop_cart">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </div>
             <span>$ 0.00</span>
           </section>
+
         </div>
       </div>
     </div>
     <!--End section curinsy and logo and baskitshop-->
+    <!--
     <header>
       <div class='container'>
         <section>
@@ -103,5 +115,5 @@
               </li> <?php } ?>
         </ul>
       </nav>
-    </header>
-    
+    </header> -->
+
