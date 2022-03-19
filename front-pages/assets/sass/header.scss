@@ -1,0 +1,60 @@
+@import "_var-format.scss";
+/* note site*/
+.note-site {
+    background-color: #ff940a;
+    .box {
+        padding: 10px;
+        h2 {
+            font-size: 12px !important;
+            color: #fff;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            display: inline-block;
+            white-space: nowrap;
+            margin: 0;
+            line-height: 2;
+            span {
+                border-bottom: 1px solid #fff;
+                padding-bottom: 1.25px;
+            }
+        }
+        .icon-close {
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+    
+}
+nav {
+    background-color: $color_menu;
+    ul {
+        display: flex;
+        li {
+            margin: 10px;
+            position: relative;
+            &:hover {
+               .categores-child {
+                   display: block;
+               }
+            }
+            a {
+               color: #fff;
+               font-size: $font-size;
+               font-weight: bold;
+               &:hover {
+                   color: #fff;
+               }
+            }
+            .categores-child {
+                position: absolute;
+                display: none;
+                top: 25px;
+                background-color: $color_menu;
+                &:hover {
+                    display: block;
+                }
+            }
+        }
+    }
+}

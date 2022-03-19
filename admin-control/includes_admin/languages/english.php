@@ -10,15 +10,23 @@
             'dashboard'         => 'dashboard',
             'categories'        => 'categories',
             // page memers
-            'edite_profile'     => 'edite profile', 
+            'edit_profile'      => 'edit profile',
+            'manger_members'    => 'manger members',
+            '#id'               => '#id',
+            'control'           => 'control',
+            'edit'              => 'edit',
+            'delete'            => 'delete',
+            'registerd_date'    => 'registerd date',
             // page edite profie
-            'full-name'         => 'full name',
+            'full_name'         => 'full name',
             'user_name'         => 'user name',
             'email'             => 'email',
             'password'          => 'password',
             'phone'             => 'phone',
             // page add new member
-            'add-new-member' => 'add new member',
+            'add_new_member'    => 'add new member',
+            // page activate
+            'activate'    => 'activate',
         );
         return $lang[$phrase];
     }

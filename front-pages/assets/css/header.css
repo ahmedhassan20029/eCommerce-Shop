@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../../../fonts/Poppins/Poppins-Regular.ttf);
+}
+body {
+  font-family: "Poppins-Regular";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* note site*/
+.note-site {
+  background-color: #ff940a;
+}
+.note-site .box {
+  padding: 10px;
+}
+.note-site .box h2 {
+  font-size: 12px !important;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0;
+  line-height: 2;
+}
+.note-site .box h2 span {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1.25px;
+}
+.note-site .box .icon-close {
+  cursor: pointer;
+  color: #fff;
+}
+
+nav {
+  background-color: #f86c1a;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 10px;
+  position: relative;
+}
+nav ul li:hover .categores-child {
+  display: block;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #fff;
+}
+nav ul li .categores-child {
+  position: absolute;
+  display: none;
+  top: 25px;
+  background-color: #f86c1a;
+}
+nav ul li .categores-child:hover {
+  display: block;
+}
+
+/*# sourceMappingURL=header.css.map */

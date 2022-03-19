@@ -1,0 +1,24 @@
+.section_manger
+    h1.text-center comments manger
+    a(class='btn btn-primary' href='comments.php?action=add') add new comment
+    .table-responsive
+        table(class='table table-bordered text-center')
+            tr.thead 
+                td id
+                td comment
+                td date
+                td items
+                td user
+                td control
+            |<?php foreach($comment as $comm) {?> 
+            tr
+                td <?php echo $comm['comment_id']?>
+                td <?php echo $comm['comment']?>
+                td <?php echo $comm['comment_date']?>
+                td <?php echo $comm['Name']?>
+                td <?php echo $comm['UserName']?>
+                td 
+                    a(href="" class='btn btn-success') edit
+                    a(id="del-comm" onclick="clickme()" href="?action=delete&comment=<?php echo $comm['comment_id']?>" class='btn btn-danger') delete
+                    p
+            |<?php }?>

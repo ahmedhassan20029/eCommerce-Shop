@@ -7,3 +7,8 @@ window.onload = function() {
     }
     // end function show and hidden settings addmin in page dashboard.php
 }
+// start function delete item in page items.php
+    // end function delete item in page items.php
+function clickme() {
+    alert("are you suer delete");
+}

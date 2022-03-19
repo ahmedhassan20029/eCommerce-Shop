@@ -1,19 +1,12 @@
 <?php
-    // categories = [manage | edit | update | add | insert | delete | status]
-    $do = isset($_GET['action']) ? $_GET['action'] : 'manage';
+    session_start();
+    if(isset($_SESSION['UserName'])) {
+        //incloud file init
+        include 'init.php';
 
-    /*redirect page manage & add & insert .... */
-    if ($do == 'manage') {
 
-        echo 'welcome to manage page categories';
+        echo ChechItim('UserName', 'users', 'ahmed2021');
 
-    } elseif($do == 'add') {
+       
 
-        echo 'welcome to add page categories';
-
-    } else {
-
-        echo 'error';
-        
     }
-    

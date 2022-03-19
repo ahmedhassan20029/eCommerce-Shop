@@ -6,7 +6,7 @@
     // condetion[1] : start check session found run condetion.
     // condetion[2] : start check get action found run condetion.
     // condetion[3] : [VALUE] GET ID =  [VALUE] SESSION ID RUN CONDETION.
-    if(isset($_SESSION['UserName']) && $_GET['action'] == 'edite' && $_GET['userid'] === $_SESSION['ID']) {
+    if(isset($_SESSION['UserName']) && $_GET['action'] == 'edite'  && $_GET['userid'] === $_SESSION['ID']) {
        
         include 'init.php';  // include file init.
         
@@ -15,7 +15,6 @@
         $stmt->execute(array($_SESSION['ID']));
         $row = $stmt->fetch();
         $count = $stmt->rowCount();
-
 // close code php. ?>
                 <!--fetch information from database to form in dashboard. -->
                 <!-- start code html. -->
@@ -24,8 +23,8 @@
                     <!-- send information to self page-->
                     <form class='' action='<?php $_SERVER['PHP_SELF']?>' method='POST'>
                         <div class='mb-3'>
-                            <label class='form-label'><?php echo lang('full-name')?></label>
-                            <input type='text' name='full-name' class='form-control' value='<?php echo $row['FullName']?>' required/>
+                            <label class='form-label'><?php echo lang('full_name')?></label>
+                            <input type='text' name='full-name' class='form-control' value='<?php echo $row['FullName']?>' required autocomplete='off' />
                             <!--vilidet by php -->
                             <?php
                                 //var array empty arror -->
@@ -38,7 +37,7 @@
                         </div>
                         <div class='mb-3'>
                             <label class='form-label'><?php echo lang('user_name') ?></label>
-                            <input type='text' name='username' class='form-control' value='<?php echo $row['UserName']?>' required/>
+                            <input type='text' name='username' class='form-control' value='<?php echo $row['UserName']?>' required autocomplete='off' />
                             <!--vilidet by php -->
                             <?php
                                 if(empty($_POST['username'])) {
@@ -49,7 +48,7 @@
                         </div>
                         <div class='mb-3'>
                             <label class='form-label'><?php echo lang('email') ?></label>
-                            <input type='email' name='email' class='form-control' autocomplete='off' value='<?php echo $row['Email']?>' required/>
+                            <input type='email' name='email' class='form-control' value='<?php echo $row['Email']?>' required autocomplete='off' />
                             <!--vilidet by php -->
                             <?php
                                 if(empty($_POST['email'])) {
@@ -64,11 +63,11 @@
                         </div>
                         <div class='mb-3'>
                             <label class='form-label'><?php echo lang('phone') ?></label>
-                            <input type='tel' name='tel' class='form-control' value='<?php echo $row['phone']?>' required/>
+                            <input type='tel' name='Phone' class='form-control' value='<?php echo $row['Phone']?>' required />
                             <!--vilidet by php -->
                             <?php
-                                if(empty($_POST['tel'])) {
-                                    $errors_input[] = 'the tel is empty';
+                                if(empty($_POST['Phone'])) {
+                                    $errors_input[] = 'the phone is empty';
                                 }
                             ?>
                             <!--vilidet by php -->     
@@ -103,8 +102,8 @@
             }    
         } else {
             // connection database.
-            $stmt = $con->prepare('UPDATE users SET UserName = ?, Password = ?, Email = ?, FullName = ?, phone = ? WHERE UserID = ?');
-            $stmt->execute(array($_POST['username'], $pass, $_POST['email'], $_POST['full-name'], $_POST['tel'], $_SESSION['ID']));
+            $stmt = $con->prepare('UPDATE users SET UserName = ?, Password = ?, Email = ?, FullName = ?, Phone = ? WHERE UserID = ?');
+            $stmt->execute(array($_POST['username'], $pass, $_POST['email'], $_POST['full-name'], $_POST['Phone'], $_SESSION['ID']));
         }
     }
     include $dir_templates . 'footer.php'; // include footer

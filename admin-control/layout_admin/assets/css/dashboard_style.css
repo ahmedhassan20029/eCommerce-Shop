@@ -1,0 +1,38 @@
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.dashboard {
+  text-transform: capitalize;
+}
+.dashboard .stat {
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+.dashboard .stat p {
+  font-size: 1.5rem;
+}
+.dashboard .st-members {
+  background-color: #3498db;
+}
+.dashboard .st-pending {
+  background-color: #c0392b;
+}
+.dashboard .st-items {
+  background-color: #d35400;
+}
+.dashboard .st-comments {
+  background-color: #8e44ad;
+}
+.dashboard .panel {
+  background-color: #c9c9c9;
+}
+.dashboard .panel .panel-body a {
+  background-color: #4e9b44;
+}
+
+/*# sourceMappingURL=dashboard_style.css.map */

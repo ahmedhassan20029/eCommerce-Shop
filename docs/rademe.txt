@@ -21,7 +21,28 @@ pages & features
 
 |-ecommerce_shop
 ============structure dashboard================
-|--dashboard
+|--admin-control
+|    --includes_admin
+|       |-- functions
+|           |-- function.php
+|       |-- languages
+|           |-- english.php
+|           |-- arabic.php
+|       |-- libraries
+|           |-- lib_css
+|               |-- flaticon
+|                   |-- flaticon.css
+|               |-- bootstrap.css
+|               |-- bootstrap.min.css
+|               |-- bootstrap.min.css.map
+|           |-- lib_js
+|               |-- bootstrap.bundle.js
+|               |-- bootstrap.bundle.js.map
+|               |-- jquery.js
+|       |-- templates
+|           |-- footer.php
+|           |-- header.php
+|           |-- navbar.php
 |    --layout_admin
 |       |-- css
 |           |-- db_style.css
@@ -32,41 +53,24 @@ pages & features
 |           |-- img-admin.jpg
 |       |-- js
 |           |-- db_custam.js
-|    --includes_admin
-|       |-- functions
-|           |-- function.php
-|       |-- languages
-|           |-- english.php
-|           |-- arabic.php
-|       |-- libraries
-|           |-- lib_css
-|               |-- bootstrap.css
-|               |-- bootstrap.css
-|               |-- bootstrap.min.css
-|               |-- bootstrap.min.css.map
-|           |-- lib_js
-|               |-- flaticon
-|                   |-- flaticon.css
-|               |-- bootstrap.bundle.js.map
-|               |-- jquery.js
-|       |-- templates
-|           |-- header.php
-|           |-- footer.php
-|           |-- navbar.php
-|       |index.php
-|       |init.php
+|       |404.php
+|       |add-members.php
 |       |connection_db.php
 |       |dashboard.php
+|       |delete-members.php
+|       |edit-members.php
+|       |edite-profile.php       
+|       |index.php
+|       |init.php
 |       |logout.php
 |       |members.php
-|       |edite-profile.php
 |       |page.php
-|       |404.php
+
 =================structure website===================
 | --data
 |    |-- uploads
 | --docs
-|    |-- rademy.txt
+|    |-- redemy.txt
 | --layout
 |    |-- css
 |    |-- fonts
@@ -96,3 +100,6 @@ use function in project
 
 // this function use in project print title page
 - gettitle();
+
+// this function use in project rederict page 404.php
+- redirect($arrormassege, $seconds = 1);

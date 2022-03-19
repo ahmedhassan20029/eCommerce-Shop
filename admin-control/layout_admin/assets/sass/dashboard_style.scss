@@ -1,0 +1,43 @@
+@import "../sass/helpers/var";
+@import "../sass/helpers/global";
+
+// start style dashboard
+.dashboard {
+    text-transform: capitalize;
+
+    .stat {
+        text-align: center;
+        padding: 15px;
+        color: #fff;
+        border-radius: 10px;
+        text-transform: capitalize;
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .st-members {
+        background-color: #3498db;
+    }
+
+    .st-pending {
+        background-color: #c0392b;
+    }
+
+    .st-items {
+        background-color: #d35400;
+    }
+
+    .st-comments {
+        background-color: #8e44ad;
+    }
+    .panel {
+        background-color: rgb(201, 201, 201);
+        .panel-body {
+            a {
+                background-color: rgb(78, 155, 68);
+            }
+        }
+    }
+}
+// end staly dashboard

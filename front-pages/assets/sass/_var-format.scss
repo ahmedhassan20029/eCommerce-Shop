@@ -1,0 +1,24 @@
+// var
+$color_menu:#f86c1a;
+$font-size: 1rem;
+// font
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../../../fonts/Poppins/Poppins-Regular.ttf);
+}
+//staly body
+body {
+    font-family: 'Poppins-Regular';
+}
+//formating
+a {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+

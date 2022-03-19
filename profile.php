@@ -29,6 +29,5 @@ if(isset($_SESSION['user'])) {
 
     header('location: login.php?action=login');
     exit();
-    //8888888888888888
 
 }

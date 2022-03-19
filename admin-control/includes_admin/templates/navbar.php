@@ -28,7 +28,13 @@
                         <a href="dashboard.php"><?php echo lang('dashboard')?></a>
                     </li>
                     <li>
-                        <a href="#"><?php echo lang('categories')?></a>
+                        <a href="categories.php?action=manege"><?php echo lang('categories')?></a>
+                    </li>
+                    <li>
+                        <a href="items.php?action=manager">items</a>
+                    </li>
+                    <li>
+                        <a href="comments.php?action=manger">comments</a>
                     </li>
                 </ul>
             </section>
